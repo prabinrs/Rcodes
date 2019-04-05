@@ -1,0 +1,37 @@
+---
+title: "SHP"
+author: "Prabin Raj Shakya"
+date: "August 8, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+## School Health Program 
+The School Health Program screening app was developed in commcare for capturing the longitutinal data from school health program. The objective was to capture: 
+1. School realted environmental and sanitaiton factors which will effect development of children 
+2. Collect the individual children detailed personal data on the developemtn and factors feffecting the developlent. 
+
+ 
+```{r}
+shReg<-read.csv("~/R/SHP_V1/Data/SH_registration.csv")
+shDetails<-read.csv("~/R/SHP_V1/Data/school_details.csv")
+chReg<-read.csv("~/R/SHP_v1/Data/child_register.csv")
+chStoolResults<-read.csv("~/R/SHP_v1/Data/stool_results.csv")
+chDetail<-read.csv("~/R/SHP_v1/Data/school_child_que.csv")
+waterResults<-read.csv("~/R/SHP_v1/Data/water_results.csv")
+washMeasurement<-read.csv("~/R/SHP_v1/Data/")
+```
+
+## Data Sets Summary
+
+The app generated following datasets: 
+1. School Registration
+
+```{r}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
